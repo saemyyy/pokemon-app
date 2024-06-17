@@ -5,7 +5,7 @@ function run() {
   fetch(`https://pokeapi.co/api/v2/pokemon-species/${search}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log("API Response (For general information):", data); // Log the API response
+      // console.log("API Response (For general information):", data); // Log the API response
       console.log(
         "API Response (For Pokédex):",
         data.flavor_text_entries.filter(
