@@ -12,7 +12,12 @@ function run() {
   fetch(`https://pokeapi.co/api/v2/pokemon-species/${search}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log("API Response (For Pokédex):", data.flavor_text_entries); // Log the API response
+      console.log(
+        "API Response (For Pokédex):",
+        data.flavor_text_entries.filter(
+          (element) => element.language.name === "en"
+        )
+      ); // Log the API response
       document.querySelector("#pokemon-name").innerText = data.name;
     })
     .catch((err) => console.error(err));
