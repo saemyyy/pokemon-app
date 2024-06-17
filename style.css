@@ -1,0 +1,17 @@
+html {
+  background-color: antiquewhite;
+  font-family: "Playwrite DE Grund", cursive;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid;
+  width: 60vw;
+  height: 70vh;
+  padding: 10%;
+}
